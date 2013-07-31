@@ -23,7 +23,7 @@ The master piece of this API is the `Robot` class provided by the `rtb` Python m
 
 To see a basic sample, check out the file [`Sample.robot`](https://github.com/cGuille/python-realtimebattle-api/blob/master/Sample.robot), which is a really basic robot. This robot do nothing but writing to stderr every non handled action sent by the server.
 
-You can handle all these actions by create a corresponding method in your own Robot classes. For instance, if the Sample robot says that a "radar" event was unhandled, you can choose to handle them by creating a `radar` method like this:
+You can handle all these actions by creating a corresponding method in your own Robot class. For instance, if the Sample robot says that a "radar" event was unhandled, you can choose to handle them by creating a `radar` method like this:
 ```python
 #! /usr/bin/env python
 # -*- coding: latin-1 -*-
@@ -36,7 +36,7 @@ class MyRobot(Robot):
       self.send_message("I spotted a robot at %f distance from me!" % distance)
 ```
 
-To know which parameters you method must have, check out the corresponding method signature in the class `RobotInfoListener` into the [`rtb module`](https://github.com/cGuille/python-realtimebattle-api/blob/master/rtb.py).
+To know which parameters your method must have, check out the corresponding method signature in the class `RobotInfoListener` into the [`rtb module`](https://github.com/cGuille/python-realtimebattle-api/blob/master/rtb.py).
 
 To know which actions you robot can do, check out the `send_*` methods in the class `RobotActuator` from the same module.
 
