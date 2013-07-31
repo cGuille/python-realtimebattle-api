@@ -212,6 +212,7 @@ class RobotActuator:
 # forget to call the corresponding Robot method.
 class Robot(RobotInfoListener, RobotActuator):
 	def __init__(self, name, colours):
+		RobotInfoListener.__init__(self)
 		self.send_option('use_non_blocking', False)
 		self.name = name
 		self.colours = colours
