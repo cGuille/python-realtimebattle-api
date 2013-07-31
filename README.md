@@ -70,12 +70,12 @@ class MyRobot(Robot):
   #   Robot.__init__(self, name, colours)
   #   # do your stuff…
   
-  # Same thing for the `initialize` method, which is already implemented in the `Robot` class.
-  # This implementation send the robot name & colours at the right moment. So call the
-  # inherited method too if you need to overload it:
+  # Same thing about the `initialize` method, which is already implemented in the
+  # `Robot` class. This implementation send the robot name & colours at the right
+  # moment. So call the inherited method too if you need to overload it:
   
   # def initialize(self, first):
-  #   Robot.initialize(self, first)
+  #   Robot.initialize(self, first):
   #   # do your stuff…
   
   def radar(self, distance, observed_object_type, radar_angle):
