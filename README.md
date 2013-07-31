@@ -25,6 +25,9 @@ To see a basic sample, check out the file [`Sample.robot`](https://github.com/cG
 
 You can handle all these actions by create a corresponding method in your own Robot classes. For instance, if the Sample robot says that a "radar" event was unhandled, you can choose to handle them by creating a `radar` method like this:
 ```python
+#! /usr/bin/env python
+# -*- coding: latin-1 -*-
+
 from rtb import Robot
 
 class MyRobot(Robot):
@@ -39,6 +42,9 @@ To know which actions you robot can do, check out the `send_*` methods in the cl
 
 Then, you will have to construct an instance of your robot, giving it a name and some colors to display in the arena. Give the name as a string and the two colors as a tuple of hexa strings. You can import the `RobotColours` named tuple in order to write a more expressive code. Your code now looks like:
 ```python
+#! /usr/bin/env python
+# -*- coding: latin-1 -*-
+
 from rtb import Robot, RobotColours
 
 class MyRobot(Robot):
@@ -51,6 +57,9 @@ my_robot = MyRobot("Robot Name", RobotColours(first_choice='386273', second_choi
 
 When your robot is ready, just call its `start` method to start reading the server's messages. Here is how it looks now:
 ```python
+#! /usr/bin/env python
+# -*- coding: latin-1 -*-
+
 from rtb import Robot, RobotColours
 
 class MyRobot(Robot):
