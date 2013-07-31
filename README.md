@@ -71,8 +71,8 @@ class MyRobot(Robot):
   #   # do your stuff…
   
   # Same thing about the `initialize` method, which is already implemented in the
-  # `Robot` class. This implementation send the robot name & colours at the right
-  # moment. So call the inherited method too if you need to overload it:
+  # `Robot` class. This implementation sends the robot name & colours at the right
+  # moment. So, call the inherited method too if you need to overload it:
   
   # def initialize(self, first):
   #   Robot.initialize(self, first):
